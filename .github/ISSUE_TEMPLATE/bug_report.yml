@@ -1,0 +1,32 @@
+name: Bug Report
+description: File a bug report
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to fill out this bug report.
+  - type: input
+    attributes:
+      label: mouseless version
+      description: What version of mouseless are you running?
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: macOS version
+      description: What version of macOS are you running?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: What happened?
+      description: Also tell us what you expected to happen
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce this issue?
+    validations:
+      required: true
