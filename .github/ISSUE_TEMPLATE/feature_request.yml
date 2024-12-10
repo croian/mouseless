@@ -7,7 +7,7 @@ body:
       value: |
         Thank you for taking the time to suggest an enhancement for mouseless.
         
-- type: textarea
+  - type: textarea
     attributes:
       label: Problem Description
       description: Please describe the problem that this enhancement would address and/or the benefit it would provide.
