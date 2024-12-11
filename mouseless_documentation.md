@@ -154,7 +154,7 @@ The `Keymap` section of the config editor allows you to customize program keybin
 The key names used/accepted mostly follow [web conventions](https://developer.mozilla.org/en-US/docs/Web/API/UI_Events/Keyboard_event_key_values), with some exceptions, and some allowances for aliases.
 
 - Printable non-whitespace characters just use the literal character
-  - `A` through `Z`, `0` through `9`, ``-=[]\;',./`
+  - `A` through `Z`, `0` through `9`, ``-=`[]\;',./``
     - **Note:** the non-shifted version of non-alpha characters should be used (e.g. `1` instead of `!`), and the uppercase version of alpha characters should be used (`A` instead of `a`, to avoid ambiguity with modifier shorthands)
 - Whitespace characters are named:
   - `Space`, `Tab`, `Enter`
@@ -178,9 +178,7 @@ The key names used/accepted mostly follow [web conventions](https://developer.mo
 
 Actions can be triggered either by a keydown event, or by a `tap` -- a downstroke and upstroke of the same key within `tap_threshold` milliseconds, uninterrupted by other keys.
 
-To specify a `tap` keybinding, simply add " tap" (note the space) after the keyname, e.g. `CommandLeft tap`.  `CommandLeft` on its own as a keybinding will cause the action to be triggered on the key downstroke.
-
-**Note:** It is recommended you use a modifier key with " tap" for the `show_overlay` action, so that it does not interfere with normal keyboard usage.
+To specify a `tap` keybinding, simply add " tap" (note the space) after the keyname, e.g. `CommandLeft tap`.  `CommandLeft` on its own as a keybinding will cause the action to be triggered on the key downstroke (which can make interaction a bit snappier).
 
 ### Using modifiers as...modifiers
 
