@@ -154,7 +154,7 @@ The key names used/accepted mostly follow [web conventions](https://developer.mo
 
 - Printable non-whitespace characters just use the literal character
   - `A` through `Z`, `0` through `9`, ``-=`[]\;',./``
-    - **Note:** the non-shifted version of non-alpha characters should be used (e.g. `1` instead of `!`), and the uppercase version of alpha characters should be used (`A` instead of `a`, to avoid ambiguity with modifier shorthands)
+    - **Note:** the non-shifted version of non-alpha characters should be used (e.g. `1` instead of `!`), and the uppercase version of alpha characters should be used (`A` instead of `a`, to avoid ambiguity with modifier shorthands (upcoming feature))
 - Whitespace characters are named:
   - `Space`, `Tab`, `Enter`
 - Modifier keys
@@ -181,16 +181,13 @@ To specify a `tap` keybinding, simply add " tap" (note the space) after the keyn
 
 ### Using modifiers as...modifiers
 
-To add a modifier to a keybinding in the usual way (like it is used for cmd+C for copy, cmd+S for save, etc), you can either:
+To add a modifier to a keybinding in the usual way (like it is used for cmd+C for copy, cmd+S for save, etc), put them before the main keypress with a `+`, e.g.:
 
-- write it out explicitly, like `cmd+shift+Tab`
-- **OR** you can use a shorthand, like `csTab`
-  - `c` signifies Command
-  - `a` signifies Alt
-  - `s` signifies Shift
-  - `m` signifies Control (`m` is used to differentiate it from command -- if mouseless is ported to Windows or linux, `c` will stand for control and `m` for meta)
+- `cmd+Tab`
+- `cmd+Tab tap`
+- `cmd+alt+shift+ctrl+Tab`
 
-**Known issue:** it seems that as of version 0.2.0, many modifier+key combinations are not working to trigger the associated action -- we will work to rectify this very soon!
+The same aliases (see [Key names](#key-names)) are allowed as when the modifier is used as the main key.
 
 ## Support / bug-reporting
 
