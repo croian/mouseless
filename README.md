@@ -19,5 +19,4 @@ The [Discussions](https://github.com/croian/mouseless-issues/discussions) tab is
 
 ## Support
 
-- For billing issues, please contact [paddle.net](https://paddle.net)
-- For other support issues (e.g. you didn't receive a license key email after purchase), or if you do not have nor want to make a github account, please contact <support@sonuscape.net>
+Please see https://mouseless.click/support
