@@ -21,13 +21,13 @@ body:
   - type: input
     attributes:
       label: Other system input apps
-      description: Are you running any other apps that can read/modify system input (i.e. via the Accessibility or Automation permissions, e.g. Karabiner-Elements, VMs, remote gaming, etc.)?
+      description: Are you running any other apps that read/modify system input (i.e. via the Accessibility or Automation permissions, e.g. Karabiner-Elements, VMs, remote gaming, etc.)?
     validations:
       required: false
   - type: textarea
     attributes:
       label: What happened?
-      description: Also tell us what you expected to happen.  If applicable, the target app and UI element may be helpful too.
+      description: Also tell us what you expected to happen.
     validations:
       required: true
   - type: textarea
