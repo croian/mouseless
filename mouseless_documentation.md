@@ -78,11 +78,11 @@ I will try to get a build for intel macs working soon!  Currently, mouseless wil
 
 - To simply **move the mouse cursor**, hold `AltLeft` during the final keypress of a a mouse action.  **Alternatively**, you can use the `cycle_mouse_action` action to set the action to `move`.
 
-- To **repeat the last action executed**, use the `repeat last mouse action` action
+- To **repeat the last action executed**, use the `repeat last mouse action` command
 
 ### Multiple monitors
 
-- To **move the overlay between monitors**, simply tap the `ShiftLeft` or `ShiftRight` buttons while the overlay is visible.
+- To **move the overlay between monitors**, tap the `ShiftLeft` or `ShiftRight` keys while the overlay is visible.
 
 ### Menu/gui actions
 
