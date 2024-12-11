@@ -51,7 +51,6 @@ I will try to get a build for intel macs working soon!  Currently, mouseless wil
 
 - To **show the overlay**, tap the `CommandLeft` key
 - To **hide the overlay**, without executing a mouse action, tap the `AltRight` key
-  - tap the  key to bring up the overlay
 
 ### Mouse actions
 
