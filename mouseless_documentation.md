@@ -196,7 +196,7 @@ The same aliases (see [Key names](#key-names)) are allowed as when the modifier 
 
 ### SSL / Network proxies
 
-If you are behind a corporate proxy (or if you have a custom SSL certificate for other reasons) and are seeing SSL errors on startup, you can use the following procedure to fix these errors, while we explore ways prevent this extra legwork.
+If you are behind a corporate proxy (or if you have a custom SSL certificate for other reasons) and are seeing SSL errors on startup, you can use the following procedure to fix these errors, while we explore ways to prevent this extra legwork.
 
 1. Obtain the custom cert (`.pem`) file from your IT department
 2. Move/copy the .pem file to the mouseless data dir, e.g.: `$ cp  cert.pem ~/Library/Containers/net.sonuscape.mouseless/Data/`
@@ -206,7 +206,7 @@ If you are behind a corporate proxy (or if you have a custom SSL certificate for
 
 Apps that can prevent keypresses from being dispatched to the rest of the system (as Karabiner sometimes does when one of its keybindings is triggered) may cause mouseless keybindings to trigger when not expected.
 
-For example, if `alt+F` is assigned an action in Karabiner, and `Alt tap` is assigned to `show_overlay` in mouseless, karabiner might allow the `alt` press and release through to the rest of the system, but block the `F` press/release.  If it's all pressed quickly enough, mouseless might register this as `Alt tap` and display the overlay, as it has no visiblity of the `F` key events.
+For example, if `alt+F` is assigned an action in Karabiner, and `Alt tap` is assigned to `show_overlay` in mouseless, karabiner might allow the `alt` press and release through to the rest of the system, but block the `F` press/release.  If it's all pressed quickly enough, mouseless might register this as `Alt tap` and display the overlay, as it has no visibility of the `F` key events.
 
 So if you experience such issues, lowering the `tap_threshold` option might help prevent most false triggers, otherwise you might need to adjust keybindings in one app or the other.
 
