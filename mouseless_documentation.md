@@ -18,7 +18,10 @@
   - [Key names](#key-names)
   - [Tap vs keydown](#tap-vs-keydown)
   - [Using modifiers as...modifiers](#using-modifiers-asmodifiers)
-- [Support / bug-reporting](#support--bug-reporting)
+- [Troubleshooting / System interactions](#troubleshooting--system-interactions)
+  - [SSL / Network proxies](#ssl--network-proxies)
+  - [Karabiner and other HID input-modifying apps](#karabiner-and-other-hid-input-modifying-apps)
+- [Support](#support)
 
 ## Getting started
 
@@ -189,6 +192,24 @@ To add a modifier to a keybinding in the usual way (like it is used for cmd+C fo
 
 The same aliases (see [Key names](#key-names)) are allowed as when the modifier is used as the main key.
 
-## Support / bug-reporting
+## Troubleshooting / System interactions
 
-If you find a bug, please check the [issues repo](https://github.com/croian/mouseless-issues), and create a new issue if it doesn't already exist.  Or if you don't have a github account, and prefer not to make one, please send your findings to <support+bugs@sonuscape.net>.
+### SSL / Network proxies
+
+If you are behind a corporate proxy (or if you have a custom SSL certificate for other reasons) and are seeing SSL errors on startup, you can use the following procedure to fix these errors, while we explore ways prevent this extra legwork.
+
+1. Obtain the custom cert (`.pem`) file from your IT department
+2. Move/copy the .pem file to the mouseless data dir, e.g.: `$ cp  cert.pem ~/Library/Containers/net.sonuscape.mouseless/Data/`
+3. Open mouseless via the command line like so: `$ REQUESTS_CA_BUNDLE=~/Library/Containers/net.sonuscape.mouseless/Data/cert.pem open Mouseless.app`
+
+### Karabiner and other HID input-modifying apps
+
+Apps that can prevent keypresses from being dispatched to the rest of the system (as Karabiner sometimes does when one of its keybindings is triggered) may cause mouseless keybindings to trigger when not expected.
+
+For example, if `alt+F` is assigned an action in Karabiner, and `Alt tap` is assigned to `show_overlay` in mouseless, karabiner might allow the `alt` press and release through to the rest of the system, but block the `F` press/release.  If it's all pressed quickly enough, mouseless might register this as `Alt tap` and display the overlay, as it has no visiblity of the `F` key events.
+
+So if you experience such issues, lowering the `tap_threshold` option might help prevent most false triggers, otherwise you might need to adjust keybindings in one app or the other.
+
+## Support
+
+Can't find your answer in here?  See <https://mouseless.click/support>
