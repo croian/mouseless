@@ -198,7 +198,7 @@ The same aliases (see [Key names](#key-names)) are allowed as when the modifier 
 
 ### SSL / Network proxies
 
-If you are behind a corporate proxy (or if you have a custom SSL certificate for other reasons) and are seeing SSL errors on startup, you can use the following procedure to fix these errors, while we explore ways to prevent this extra legwork.
+Mouseless must use the network to start a trial and to validate licenses.  If you are behind a corporate proxy (or if you have a custom SSL certificate for other reasons) and are seeing SSL errors on startup, you can use the following procedure to fix these errors, while we explore ways to prevent this extra legwork.
 
 1. Obtain the custom cert (`.pem`) file from your IT department
 2. Move/copy the .pem file to the mouseless data dir, e.g.: `$ cp  cert.pem ~/Library/Containers/net.sonuscape.mouseless/Data/`
