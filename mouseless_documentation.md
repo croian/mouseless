@@ -52,8 +52,9 @@ I will try to get a build for intel macs working soon!  Currently, mouseless wil
 
 ### The overlay
 
-- To **show the overlay**, tap the `CommandLeft` key
-- To **hide the overlay**, without executing a mouse action, tap the `AltRight` key
+- To **show the overlay**, `tap` the `CommandLeft` key
+  - **Note:** this is a `tap` action by default, so you must press and release the key relatively quickly for it to register (< 0.2 seconds by default, see [Tap vs keydown](#tap-vs-keydown) for more info)
+- To **hide the overlay**, without executing a mouse action, press the `AltRight` key
 
 ### Mouse actions
 
@@ -85,12 +86,12 @@ I will try to get a build for intel macs working soon!  Currently, mouseless wil
 
 ### Multiple monitors
 
-- To **move the overlay between monitors**, tap the `ShiftLeft` or `ShiftRight` keys while the overlay is visible.
+- To **move the overlay between monitors**, `tap` the `ShiftLeft` or `ShiftRight` keys while the overlay is visible.
 
 ### Menu/gui actions
 
 - To **open the config editor**, press the `Tab` key while the overlay is up
-- To **close dialogs**, tap the the `AltLeft` key
+- To **close dialogs**, press the the `AltLeft` key
 
 ## Customizing mouseless
 
@@ -115,7 +116,8 @@ I will try to get a build for intel macs working soon!  Currently, mouseless wil
 
 ### Behavior options
 
-- **Hide cursor on click**: When this is on, the cursor moves out of the way after a click action is executed (*note:* the cursor is moved instead of truly hidden because despite my best efforts, I haven't gotten the native `NSCursor.setHiddenUntilMouseMoves/hide` APIs to work)
+- **Hide cursor on click**: When this is on, the cursor moves out of the way after a click action is executed.
+  - **Note:** the cursor is moved instead of truly hidden because despite my best efforts, I haven't gotten the native `NSCursor.setHiddenUntilMouseMoves/hide` APIs to work.
 - **Hide location**: The location to move the cursor when it hides.  You can choose any edge (top/bottom/left/right) or corner (top_left/top_right/bottom_left/bottom_right).
 - **Move duration (ms)**: The time taken to move the mouse cursor during move and drag actions.
 - **Multi-action timeout (ms):** For double and triple clicks, this sets the maximum time that can pass between keypresses before it no longer triggers a native double or triple click.
@@ -128,7 +130,7 @@ I will try to get a build for intel macs working soon!  Currently, mouseless wil
 - **Master opacity**: Controls transparency. 0 = invisible; 1 = 100% opaque
 - **RGBA options** (background, grid, text, etc.):
   - Use these to adjust the color (red, green, blue) and transparency (alpha) values of the various interface elements.  Valid values are between 0 and 1.
-  - *Note:* these values are multiplicative with the master_opacity value; i.e. if master_opacity is 0.5 and background_rgba is 0.8, the background will have a final alpha of 0.4 (40% opaque).
+  - **Note:** these values are multiplicative with the master_opacity value; i.e. if master_opacity is 0.5 and background_rgba is 0.8, the background will have a final alpha of 0.4 (40% opaque).
 - **Grid line thickness**: Thickness of the main grid lines, in pixels.
 - **Font size multiplier**: Scales the size of the characters in the main cells.
 - **Sub-grid font size multiplier**: Scales the size of the characters in the sub cells.
@@ -212,4 +214,4 @@ So if you experience such issues, lowering the `tap_threshold` option might help
 
 ## Support
 
-Can't find your answer in here?  See <https://mouseless.click/support>
+Can't find your answer in here?  Please see <https://mouseless.click/support>
