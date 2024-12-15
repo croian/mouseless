@@ -91,7 +91,7 @@ I will try to get a build for intel macs working soon!  Currently, mouseless wil
 ### Menu/gui actions
 
 - To **open the config editor**, press the `Tab` key while the overlay is up
-- To **close dialogs**, press the the `AltLeft` key
+- To **close dialogs**, press the the `AltRight` key
 
 ## Customizing mouseless
 
