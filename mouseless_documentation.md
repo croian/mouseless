@@ -42,7 +42,7 @@ First time usage:
 
 ### Intel macs
 
-I will try to get a build for intel macs working soon!  Currently, mouseless will only run on Apple silicon.
+I will try to get a build for Intel Macs working soon!  Currently, mouseless will only run on Apple silicon.
 
 ## Using mouseless
 
@@ -130,7 +130,7 @@ I will try to get a build for intel macs working soon!  Currently, mouseless wil
 - **Master opacity**: Controls transparency. 0 = invisible; 1 = 100% opaque
 - **RGBA options** (background, grid, text, etc.):
   - Use these to adjust the color (red, green, blue) and transparency (alpha) values of the various interface elements.  Valid values are between 0 and 1.
-  - **Note:** these values are multiplicative with the master_opacity value; i.e. if master_opacity is 0.5 and background_rgba is 0.8, the background will have a final alpha of 0.4 (40% opaque).
+  - **Note:** these values are multiplicative with the `master opacity` value; i.e. if `master opacity` is 0.5 and `background rgba`'s `A` is 0.8, the background will have a final alpha of 0.4 (40% opaque).
 - **Grid line thickness**: Thickness of the main grid lines, in pixels.
 - **Font size multiplier**: Scales the size of the characters in the main cells.
 - **Sub-grid font size multiplier**: Scales the size of the characters in the sub cells.
