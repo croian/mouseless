@@ -11,7 +11,7 @@ Bug tracking and feature/enhancement requests for <https://mouseless.click>, as 
 
 ## Discussion
 
-Have a question that isn't answered by the [documentation](https://github.com/croian/mouseless-issues/blob/main/mouseless_documentation.md), and hasn't been asked in the [issue tracker](https://github.com/croian/mouseless-issues/issues)?
+Have a question that isn't answered by the [documentation](https://github.com/croian/mouseless-issues/blob/main/mouseless_documentation.md)?
 
 Want to share techniques or config files?
 
