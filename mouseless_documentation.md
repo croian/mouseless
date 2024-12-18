@@ -25,11 +25,12 @@
 
 ## Getting started
 
-To install:
+To install (or update):
 
 - download the .dmg file from <https://mouseless.click>
 - open the .dmg file
 - drag `Mouseless.app` into the `Applications` folder
+- if updating: choose "Replace" instead of "Keep both" when prompted
 
 First time usage:
 
@@ -40,9 +41,11 @@ First time usage:
 - **restart the application** for permissions to take effect
 - enjoy!
 
-### Intel macs
+### Intel macs, macOS 13 and below
 
 I will try to get a build for Intel Macs working soon!  Currently, mouseless will only run on Apple silicon.
+
+Also, it seems mouseless does not run on macOS 13 and below -- will be evaluating support for them soon.
 
 ## Using mouseless
 
