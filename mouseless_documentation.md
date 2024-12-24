@@ -154,8 +154,8 @@ These options allow you to define the resolution of the grid and sub-grid, as we
 #### Assigning configs to multiple monitors
 
 - **Monitor assignments (beta)**: This controls how the grid_configs in the config file get mapped to each monitor. There are currently 3 types of values you can assign:
-  - **single**: the first grid_config gets assigned to all monitors
-  - **auto**: the first grid_config get's assigned to monitors with a horizontal aspect ratio, and the second grid config (if present) gets assigned to monitors with a vertical aspect ratio
+  - **`single`**: the first grid_config gets assigned to all monitors
+  - **`auto`**: the first grid_config get's assigned to monitors with a horizontal aspect ratio, and the second grid config (if present) gets assigned to monitors with a vertical aspect ratio
   - **[a list of grid config names]**: this will map each monitor to a grid_config, referenced by name. E.g. `[full_qwerty, vertical_qwerty]`, assuming you've given those names to two grid_configs in your config file.
     - Currently to edit grid_config names, or any grid configs beyond the first, you must edit the `config.yaml` file manually (so it's recommended to back it up first!).  See the [default config](https://github.com/croian/mouseless-issues/releases/download/v0.2.2/default_config_v0.2.2.yaml) for an example of the "auto" option with 2 grid_configs.
     - Soon there will be a feature so you can easily see system screen numbers, but for now, you may have to trial and error a bit if you have 3+ monitors
