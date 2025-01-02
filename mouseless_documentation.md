@@ -210,6 +210,14 @@ To add a modifier to a keybinding in the usual way (like it is used for cmd+C fo
 
 The same aliases (see [Key names](#key-names)) are allowed as when the modifier is used as the main key.
 
+### Multiple shortcuts per action
+
+To assign multiple keyboard shortcuts to an action, use a comma separated list, surrounded by brackets (`[]`), e.g.:
+
+`[U, '9', ',', "'", '[', Enter]`.
+
+**Note: some characters require quotes to parse correctly, as seen above.**
+
 ## Troubleshooting / System interactions
 
 ### SSL / Network proxies
