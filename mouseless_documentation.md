@@ -84,7 +84,10 @@ Also, it seems mouseless does not run on macOS 13 and below -- will be evaluatin
   - to **cancel a drag** (release at the system cursor's current position), press `Escape`
 - **Click-and-drag alternative:** you can also use the `cycle mouse action` action to set the action to be performed when pressing the `Space` key or a sub-cell char. During a drag, this action cycles between `drag` and `drop`.
 
-- To simply **move the mouse cursor**, hold `AltLeft` during the final keypress of a a mouse action.  **Alternatively**, you can use the `cycle_mouse_action` action to set the action to `move`.
+- To simply **move the mouse cursor**, you have a few options:
+  - tap `AltLeft` to click where the virtual cursor is (`execute mouse move` action)
+  - hold `AltLeft` during the final keypress of a a mouse action (`hold for move` action)
+  - use the `cycle_mouse_action` action to set the action to `move`, then execute a mouse action
 
 - To **repeat the last action executed**, use the `repeat last mouse action` command
 
