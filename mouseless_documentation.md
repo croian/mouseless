@@ -58,7 +58,7 @@ Also, it seems mouseless does not run on macOS 13 and below -- will be evaluatin
 
 - To **show the overlay**, `tap` the `CommandLeft` key
   - **Note:** this is a `tap` action by default, so you must press and release the key relatively quickly for it to register (< 0.2 seconds by default, see [Tap vs keydown](#tap-vs-keydown) for more info)
-- To **hide the overlay**, without executing a mouse action, press the `AltRight` key
+- To **hide the overlay**, without executing a mouse action, press the `Escape` key
 
 ### Mouse actions
 
@@ -81,7 +81,7 @@ Also, it seems mouseless does not run on macOS 13 and below -- will be evaluatin
   - the overlay will remain up for you to choose the point you want to drag to or drop at
   - to release/drop, enter in a click-coordinate as normal
   - to drag to a point (without release/drop), hold the commandLeft key on the final press again
-  - to **cancel a drag** (release at current cursor position), press `AltRight`
+  - to **cancel a drag** (release at the system cursor's current position), press `Escape`
 - **Click-and-drag alternative:** you can also use the `cycle mouse action` action to set the action to be performed when pressing the `Space` key or a sub-cell char. During a drag, this action cycles between `drag` and `drop`.
 
 - To simply **move the mouse cursor**, hold `AltLeft` during the final keypress of a a mouse action.  **Alternatively**, you can use the `cycle_mouse_action` action to set the action to `move`.
