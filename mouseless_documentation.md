@@ -64,9 +64,9 @@ Also, it seems mouseless does not run on macOS 13 and below -- will be evaluatin
 
 - To **click**:
   - while the overlay is showing, type the two characters of any given cell to choose that cell
-  - then press `Space` to click at the center of the cell, where the little green cursor is
+  - then press `Space` to click at the center of the cell, where the virtual cursor (little green dot) is
     - OR press any character you see in a sub-cell to click at that sub-cell
-  - you can also press space before entering any characters, or after entering one, to click where the cursor is
+  - you can also press space before entering any characters, or after entering one, to click where the virtual cursor is
 
 - To **right click**, hold the `CommandRight` key while pressing the final key of a click action
 
@@ -120,13 +120,12 @@ Also, it seems mouseless does not run on macOS 13 and below -- will be evaluatin
 
 ### Behavior options
 
-- **Hide cursor on click**: When this is on, the cursor moves out of the way after a click action is executed.
-  - **Note:** the cursor is moved instead of truly hidden because despite my best efforts, I haven't gotten the native `NSCursor.setHiddenUntilMouseMoves/hide` APIs to work.
+- **Hide cursor on click**: When this is on, the system cursor moves out of the way after a click action is executed.
 - **Hide location**: The location to move the cursor when it hides.  You can choose any edge (top/bottom/left/right) or corner (top_left/top_right/bottom_left/bottom_right).
-- **Move duration (ms)**: The time taken to move the mouse cursor during move and drag actions.
+- **Move duration (ms)**: The time taken to move the system cursor during move and drag actions.
 - **Multi-action timeout (ms):** For double and triple clicks, this sets the maximum time that can pass between keypresses before it no longer triggers a native double or triple click.
 - **Tap threshold (ms)**: For tap-triggered keybindings, this is the maximum time a key can be down before its no longer considered a tap.
-- **Move real cursor with virtual (experimental)**: When this is on, the native cursor will smoothly move as you select a cell, following the green cursor.
+- **Move real cursor with virtual (experimental)**: When this is on, the system cursor will smoothly move as you select a cell, following the virtual cursor (the green dot).
   - **Note:** this feature was made primarily for demo purposes, and *can possibly make the program less responsive / precise* at mapping your keypresses to the desired mouse actions.  *Use at your own risk!*
 
 ### Style / Appearance options
