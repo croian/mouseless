@@ -87,7 +87,7 @@ Also, it seems mouseless does not run on macOS 13 and below -- will be evaluatin
 - To simply **move the mouse cursor**, you have a few options:
   - tap `AltLeft` to click where the virtual cursor is (`execute mouse move` action)
   - hold `AltLeft` during the final keypress of a a mouse action (`hold for move` action)
-  - use the `cycle_mouse_action` action to set the action to `move`, then execute a mouse action
+  - use the `cycle mouse action` action to set the action to `move`, then execute a mouse action
 
 - To **repeat the last action executed**, use the `repeat last mouse action` command
 
@@ -234,7 +234,7 @@ Mouseless must use the network to start a trial and to validate licenses.  If yo
 
 Apps that can prevent keypresses from being dispatched to the rest of the system (as Karabiner sometimes does when one of its keybindings is triggered) may cause mouseless keybindings to trigger when not expected.
 
-For example, if `alt+F` is assigned an action in Karabiner, and `Alt tap` is assigned to `show_overlay` in mouseless, karabiner might allow the `alt` press and release through to the rest of the system, but block the `F` press/release.  If it's all pressed quickly enough, mouseless might register this as `Alt tap` and display the overlay, as it has no visibility of the `F` key events.
+For example, if `alt+F` is assigned an action in Karabiner, and `Alt tap` is assigned to `show overlay` in mouseless, karabiner might allow the `alt` press and release through to the rest of the system, but block the `F` press/release.  If it's all pressed quickly enough, mouseless might register this as `Alt tap` and display the overlay, as it has no visibility of the `F` key events.
 
 So if you experience such issues, lowering the `tap_threshold` option might help prevent most false triggers, otherwise you might need to adjust keybindings in one app or the other.
 
