@@ -19,6 +19,7 @@
   - [Key names](#key-names)
   - [Tap vs keydown](#tap-vs-keydown)
   - [Using modifiers as...modifiers](#using-modifiers-asmodifiers)
+  - [Multiple shortcuts per action](#multiple-shortcuts-per-action)
 - [Troubleshooting / System interactions](#troubleshooting--system-interactions)
   - [SSL / Network proxies](#ssl--network-proxies)
   - [Karabiner and other HID input-modifying apps](#karabiner-and-other-hid-input-modifying-apps)
