@@ -219,7 +219,9 @@ To assign multiple keyboard shortcuts to an action, use a comma separated list, 
 
 `[U, '9', ',', "'", '[', Enter]`.
 
-**Note: some characters require quotes to parse correctly, as seen above.**
+**Note**: some characters require quotes to parse correctly, as seen above.
+
+**Note 2:** In `0.3.0-preview.3`, the brackets are no longer needed, and items should be separated by a comma + space (`, `).  I think some symbols may not work even with quotes -- will verify and fix.
 
 ## Troubleshooting / System interactions
 
