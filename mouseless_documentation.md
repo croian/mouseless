@@ -2,7 +2,7 @@
 
 **Note:**
 
-**This doesn't yet reflect changes in the newly-released v0.3.0**, but I'll be updating it later today (Thurs Feb 20).
+**This document doesn't yet reflect changes in the newly-released v0.3.0**, but I'll be updating it later today (Thurs Feb 20).
 
 In the meantime, the [release notes](https://github.com/croian/mouseless-issues/releases) may help you understand/discover some of the new features.  The tooltips on relevant fields in the config editor may help also.
 
