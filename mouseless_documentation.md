@@ -13,8 +13,6 @@
   - [Managing config files](#managing-config-files)
   - [Behavior options](#behavior-options)
   - [Style / Appearance options](#style--appearance-options)
-  - [Grid options](#grid-options)
-  - [Assigning configs to multiple monitors](#assigning-configs-to-multiple-monitors)
 - [Keybindings](#keybindings)
   - [Key names](#key-names)
   - [Tap vs keydown](#tap-vs-keydown)
