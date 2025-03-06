@@ -1,6 +1,6 @@
-# mouseless-issues
+# mouseless
 
-Bug tracking and feature/enhancement requests for <https://mouseless.click>, as well as [documentation](https://github.com/croian/mouseless-issues/blob/main/mouseless_documentation.md) and release notes.
+Bug tracking and feature requests for <https://mouseless.click>, as well as [documentation](https://github.com/croian/mouseless-issues/blob/main/mouseless_documentation.md) and [release notes](https://github.com/croian/mouseless/releases).
 
 ## Reporting bugs / Requesting features
 
