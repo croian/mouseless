@@ -19,6 +19,7 @@
   - [Using modifiers as...modifiers](#using-modifiers-asmodifiers)
 - [Troubleshooting / System interactions](#troubleshooting--system-interactions)
   - [SSL / Network proxies](#ssl--network-proxies)
+  - [BetterTouchTool conflicts](#bettertouchtool-conflicts)
   - [Karabiner and other HID input-modifying apps](#karabiner-and-other-hid-input-modifying-apps)
 - [Support](#support)
 
@@ -204,13 +205,17 @@ If you are behind a corporate proxy (or if you have a custom SSL certificate for
 2. Move/copy the .pem file to the mouseless data dir, e.g.: `$ cp  cert.pem ~/Library/Containers/net.sonuscape.mouseless/Data/`
 3. Open mouseless via the command line like so: `$ REQUESTS_CA_BUNDLE=~/Library/Containers/net.sonuscape.mouseless/Data/cert.pem open Mouseless.app`
 
+### BetterTouchTool conflicts
+
+If you're having issues with BTT hotkeys erroneously triggering the Mouseless overlay, a user has kindly provided this [config / example](https://github.com/croian/mouseless/discussions/183#discussioncomment-12590207), which may help you keep the same BTT hotkey, but without triggering Mouseless.
+
 ### Karabiner and other HID input-modifying apps
 
 Apps that can prevent keypresses from being dispatched to the rest of the system (as Karabiner sometimes does when one of its keybindings is triggered) may cause mouseless keybindings to trigger when not expected.
 
 For example, if `alt+F` is assigned an action in Karabiner, and `Alt tap` is assigned to `show_overlay` in mouseless, karabiner might allow the `alt` press and release through to the rest of the system, but block the `F` press/release.  If it's all pressed quickly enough, mouseless might register this as `Alt tap` and display the overlay, as it has no visibility of the `F` key events.
 
-So if you experience such issues, lowering the `tap_threshold` option might help prevent most false triggers, otherwise you might need to adjust keybindings in one app or the other.
+So if you experience such issues, lowering the `tap_threshold` setting might help prevent most false triggers, otherwise you might need to adjust keybindings in one app or the other.
 
 ## Support
 
