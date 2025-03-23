@@ -33,7 +33,7 @@ To install (or update):
 - if updating: choose "Replace" instead of "Keep both" when prompted
 
 You can also install in the terminal via Homebrew: `brew install --cask mouseless`
-  - Note: a prerelease channel for homebrew is coming soon!
+Or for the prerelease channel: `brew install --cask mouseless@preview`
 
 First time usage:
 
