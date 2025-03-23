@@ -32,8 +32,10 @@ To install (or update):
 - drag `Mouseless.app` into the `Applications` folder
 - if updating: choose "Replace" instead of "Keep both" when prompted
 
-You can also install in the terminal via Homebrew: `brew install --cask mouseless`
-Or for the prerelease channel: `brew install --cask mouseless@preview`
+You can also install in the terminal via Homebrew:
+
+- `brew install --cask mouseless` (stable channel)
+- `brew install --cask mouseless@preview` (prerelease channel)
 
 First time usage:
 
