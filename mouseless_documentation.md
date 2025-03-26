@@ -1,5 +1,7 @@
 # Mouseless documentation
 
+**Note:** Most of the information in the [Using mouseless](#using-mouseless), [Customizing mouseless](#customizing-mouseless), and [Keybindings](#keybindings) sections is present in **tooltips in the Mouseless config editor** (when hovering over fields or info icons), where it is presented in context and thus probably easier to understand.
+
 ## Table of contents
 
 - [Getting started](#getting-started)
@@ -18,6 +20,8 @@
   - [Tap vs keydown](#tap-vs-keydown)
   - [Using modifiers as...modifiers](#using-modifiers-asmodifiers)
 - [Troubleshooting / System interactions](#troubleshooting--system-interactions)
+  - [Password fields](#password-fields)
+  - [Overlay not showing, Mouseless unresponsive](#overlay-not-showing-mouseless-unresponsive)
   - [SSL / Network proxies](#ssl--network-proxies)
   - [BetterTouchTool conflicts](#bettertouchtool-conflicts)
   - [Karabiner and other HID input-modifying apps](#karabiner-and-other-hid-input-modifying-apps)
@@ -196,6 +200,18 @@ To add a modifier to a keybinding in the usual way (like it is used for cmd+C fo
 The same aliases (see [Key names](#key-names)) are allowed as when the modifier is used as the main key.
 
 ## Troubleshooting / System interactions
+
+### Password fields
+
+The overlay will not respond when in a password field or other field marked as sensitive.  This is not a bug, but a result of MacOS's 'Secure Input' mode, which prevents applications from reading keyboard input while in these fields.  To continue using Mouseless, simply leave the field (e.g. by pressing `Tab`).
+
+### Overlay not showing, Mouseless unresponsive
+
+This may be caused by MacOS getting stuck in 'Secure Input' mode. Some users report this happening after the screen lock / unlock cycle.
+
+Espanso has a good [explainer](https://espanso.org/docs/troubleshooting/secure-input/) on this issue, as well as some potential workarounds to get un-stuck (the last resort is to log out your MacOS user and log back in).
+
+I will add a feature in Mouseless v0.4.0 to check if the system is stuck in Secure Input mode, for easier troubleshooting.
 
 ### SSL / Network proxies
 
