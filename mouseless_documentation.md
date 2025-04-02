@@ -21,7 +21,8 @@
   - [Using modifiers as...modifiers](#using-modifiers-asmodifiers)
 - [Troubleshooting / System interactions](#troubleshooting--system-interactions)
   - [Password fields](#password-fields)
-  - [Overlay not showing, Mouseless unresponsive](#overlay-not-showing-mouseless-unresponsive)
+  - [Hotkeys don't work after upgrading](#hotkeys-dont-work-after-upgrading)
+  - [Hotkeys don't work after a while](#hotkeys-dont-work-after-a-while-eg-after-lock-screen)
   - [SSL / Network proxies](#ssl--network-proxies)
   - [BetterTouchTool conflicts](#bettertouchtool-conflicts)
   - [Karabiner and other HID input-modifying apps](#karabiner-and-other-hid-input-modifying-apps)
@@ -205,7 +206,18 @@ The same aliases (see [Key names](#key-names)) are allowed as when the modifier 
 
 The overlay will not respond when in a password field or other field marked as sensitive.  This is not a bug, but a result of MacOS's 'Secure Input' mode, which prevents applications from reading keyboard input while in these fields.  To continue using Mouseless, simply leave the field (e.g. by pressing `Tab`).
 
-### Overlay not showing, Mouseless unresponsive
+### Hotkeys don't work after upgrading
+
+At least one user has reported the following fix after upgrading to a new version mouseless:
+
+1) exit mouseless
+2) delete the Accessibility permission for Mouseless
+   - make *SURE* mouseless isn't running while you do this -- MacOS tends to lock you out of keyboard and mouse input if you delete this permission from a running process
+   - System Settings > Privacy and Security > Accessibility > select Mouseless and click the `-` button
+3) Re-add the permission
+4) Restart mouseless
+
+### Hotkeys don't work after a while (e.g. after lock screen)
 
 This may be caused by MacOS getting stuck in 'Secure Input' mode. Some users report this happening after the screen lock / unlock cycle.
 
