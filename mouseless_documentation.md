@@ -208,14 +208,14 @@ The overlay will not respond when in a password field or other field marked as s
 
 ### Hotkeys don't work after upgrading
 
-At least one user has reported the following fix after upgrading to a new version mouseless:
+At least one user has reported the following fix after upgrading to a new version of Mouseless:
 
-1) exit mouseless
+1) exit Mouseless
 2) delete the Accessibility permission for Mouseless
    - make *SURE* mouseless isn't running while you do this -- MacOS tends to lock you out of keyboard and mouse input if you delete this permission from a running process
    - System Settings > Privacy and Security > Accessibility > select Mouseless and click the `-` button
-3) Re-add the permission
-4) Restart mouseless
+3) Re-add the permission (either via the `+` button or by restarting Mouseless)
+4) Restart Mouseless
 
 ### Hotkeys don't work after a while (e.g. after lock screen)
 
