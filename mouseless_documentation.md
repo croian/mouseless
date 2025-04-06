@@ -105,7 +105,7 @@ Support for MacOS 13 and below is also being worked on.
 
 ### Modifier + click (or other actions)
 
-If a modifier key is held during a mouse action and assigned to a \`hold for\` command, a native mod+mouse event will be simulated (e.g. ctrl+click for right click, cmd+click to open link new tab).  **Note:** currently, modifiers assigned to wheel-related `hold for` actions will prevent this, but that will be fixed soon.
+If a modifier key is held during a mouse action, and *isn't* assigned to a \`hold for\` command, a native mod+mouse event will be simulated (e.g. ctrl+click for right click, cmd+click to open link new tab).  **Note:** currently, modifiers assigned to wheel-related `hold for` actions will prevent this, but that will be fixed soon.
 
 ### Multiple monitor usage
 
