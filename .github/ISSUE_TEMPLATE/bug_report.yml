@@ -14,14 +14,14 @@ body:
       required: true
   - type: input
     attributes:
-      label: macOS version
-      description: What version of macOS are you running?
+      label: OS version
+      description: What OS version are you running?
     validations:
       required: true
   - type: input
     attributes:
       label: Other system input apps
-      description: Are you running any other apps that read/modify system input (i.e. via the Accessibility or Automation permissions, e.g. Karabiner-Elements, VMs, remote gaming, etc.)?
+      description: Are you running any other apps that modify or suppress keyboard input?
     validations:
       required: false
   - type: textarea
