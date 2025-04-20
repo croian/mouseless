@@ -112,7 +112,7 @@ If a modifier key is held during a mouse action, and *isn't* assigned to a \`hol
 
 To use the mouse wheel, `tap` the `OptionLeft` key (`toggle wheel mode` command) to enter and exit "wheel mode" -- currently, this must be done *without* the overlay showing, but support for using wheel mode *with* the overlay showing will be added in 0.4 or 0.5.
 
-While in wheel mode, use `J`, `K`, `L`, and `;` to scroll up/down/left/right, and hold `CommandLeft` to increase the speed (there is also a `hold for speed decrease command`.  There are also `fast`, `step` (precise increment, responds to autorepeat when held), and `step large` commands, as well as `jump to top/bottom/left/right` to jump to the edge of a scrollable area.
+While in wheel mode, use `J`, `K`, `L`, and `;` to scroll up/down/left/right, and hold `CommandLeft` to increase the speed (there is also a `hold for speed decrease` command).  There are also `fast`, `step` (precise increment, responds to autorepeat when held), and `step large` commands, as well as `jump to top/bottom/left/right` to jump to the edge of a scrollable area.
 
 To adjust scrolling speed / step sizes, as well as `auto off` duration, see the `Wheel` subsection of the `Behavior` section in the config editor.
 
