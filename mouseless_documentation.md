@@ -1,17 +1,18 @@
 # Mouseless documentation
 
-**Note:** Most of the information in the [Using mouseless](#using-mouseless), [Customizing mouseless](#customizing-mouseless), and [Keybindings](#keybindings) sections is present in **tooltips in the Mouseless config editor** (when hovering over fields or info icons), where it is presented in context and thus probably easier to understand.
+**Note:** Information about specific settings and commands (much of the [Using Mouseless](#using-mouseless), [Customizing Mouseless](#customizing-mouseless), and [Keybindings](#keybindings) sections) is present in **tooltips in the Mouseless config editor** (when hovering over fields or info icons), where it is presented in context and thus possibly easier to understand.
 
 ## Table of contents
 
 - [Getting started](#getting-started)
-- [Using mouseless](#using-mouseless)
+- [Using Mouseless](#using-mouseless)
   - [The overlay](#the-overlay)
-  - [Mouse actions](#mouse-actions)
-  - [Modifier + click (or other actions](#modifier--click-or-other-actions)
+  - [Clicking, moving, and dragging](#clicking-moving-and-dragging)
+  - [Modifier + click (or other actions)](#modifier--click-or-other-actions)
+  - [Wheel / scrolling](#wheel--scrolling)
   - [Multiple monitor usage](#multiple-monitor-usage)
   - [Menu/gui actions](#menugui-actions)
-- [Customizing mouseless](#customizing-mouseless)
+- [Customizing Mouseless](#customizing-mouseless)
   - [The config editor](#the-config-editor)
   - [Manually managing config files](#manually-managing-config-files)
   - [Behavior options](#behavior-options)
@@ -48,21 +49,21 @@ First time usage:
 - open Mouseless (e.g. via spotlight search)
 - read/agree to the terms of service
 - start trial or activate
-- give mouseless the `Accessibility` permission when prompted
+- give Mouseless the `Accessibility` permission when prompted
 - **restart the application** for permissions to take effect
 - enjoy!
 
 ### Intel macs, macOS 13 and below
 
-I am working on an [Intel Mac](https://github.com/croian/mouseless-issues/issues/2) build!  Currently, mouseless will only run on Apple silicon.
+I am working on an [Intel Mac](https://github.com/croian/mouseless-issues/issues/2) build!  Currently, Mouseless will only run on Apple silicon.
 
 Support for MacOS 13 and below is also being worked on.
 
-## Using mouseless
+## Using Mouseless
 
 **Note:** these docs currently show the default keybindings.  If a command is unassigned by default, the command name is used instead.
 
-**To view/edit the keybindings** and other options, choose `Edit config...` from the mouseless menu in the status bar / system tray, **OR** press `Tab` (`edit config` command) while the overlay is showing.
+**To view/edit the keybindings** and other options, choose `Edit config...` from the Mouseless menu in the status bar / system tray, **OR** press `Tab` (`edit config` command) while the overlay is showing.
 
 ### The overlay
 
@@ -70,7 +71,7 @@ Support for MacOS 13 and below is also being worked on.
   - **Note:** this is a `tap` command by default, so you must press and release the key relatively quickly for it to register (< 0.2 seconds by default, see [Tap vs keydown](#tap-vs-keydown) for more info)
 - To **hide the overlay**, without executing a mouse action, press the `Escape` key (`hide overlay` command)
 
-### Mouse actions
+### Clicking, moving, and dragging
 
 - To **click**:
   - while the overlay is showing, type the two characters of any given cell to choose that cell
@@ -107,6 +108,14 @@ Support for MacOS 13 and below is also being worked on.
 
 If a modifier key is held during a mouse action, and *isn't* assigned to a \`hold for\` command, a native mod+mouse event will be simulated (e.g. ctrl+click for right click, cmd+click to open link new tab).  **Note:** currently, modifiers assigned to wheel-related `hold for` actions will prevent this, but that will be fixed soon.
 
+### Wheel / scrolling
+
+To use the mouse wheel, `tap` the `OptionLeft` key (`toggle wheel mode` command) to enter and exit "wheel mode" -- currently, this must be done *without* the overlay showing, but support for using wheel mode *with* the overlay showing will be added in 0.4 or 0.5.
+
+While in wheel mode, use `J`, `K`, `L`, and `;` to scroll up/down/left/right, and hold `CommandLeft` to increase the speed.  There are also `fast`, `step` (precise increment, responds to autorepeat when held), and `step large` commands, as well as `jump to top/bottom/left/right` to jump to the edge of a scrollable area.
+
+To adjust scrolling speed / step sizes, as well as `auto off` duration, see the `Wheel` subsection of the `Behavior` section in the config editor.
+
 ### Multiple monitor usage
 
 - To **move the overlay between monitors**, `tap` the `ShiftLeft` or `ShiftRight` keys while the overlay is visible.
@@ -121,11 +130,11 @@ If a modifier key is held during a mouse action, and *isn't* assigned to a \`hol
 - To **open the config editor**, press the `Tab` key while the overlay is up (`edit config` command)
 - To **close dialogs, tooltips, etc**, press the the `Escape` key (`close ui element` command)
 
-## Customizing mouseless
+## Customizing Mouseless
 
 ### The config editor
 
-- To **open the config editor**, choose `Edit config...` from the mouseless menu (in the mac menu/status bar, upper-right corner of screen), **OR** press `Tab` while the overlay is visible
+- To **open the config editor**, choose `Edit config...` from the Mouseless menu (in the mac menu/status bar, upper-right corner of screen), **OR** press `Tab` while the overlay is visible
 - Many fields have explanatory tooltips if you hover over the label
 - Changes you make are applied automatically
 - To **save**, hit the save button (or press `cmd+S`)
@@ -217,7 +226,7 @@ At least one user has reported the following fix after upgrading to a new versio
 
 1) exit Mouseless
 2) delete the Accessibility permission for Mouseless
-   - make *SURE* mouseless isn't running while you do this -- MacOS tends to lock you out of keyboard and mouse input if you delete this permission from a running process
+   - make *SURE* Mouseless isn't running while you do this -- MacOS tends to lock you out of keyboard and mouse input if you delete this permission from a running process
    - System Settings > Privacy and Security > Accessibility > select Mouseless and click the `-` button
 3) Re-add the permission (either via the `+` button or by restarting Mouseless)
 4) Restart Mouseless
@@ -237,8 +246,8 @@ Mouseless must use the network to start a trial and to validate licenses (purcha
 If you are behind a corporate proxy (or if you have a custom SSL certificate for other reasons) and are seeing SSL errors on startup, you can use the following procedure to fix these errors, while we explore ways to prevent this extra legwork.
 
 1. Obtain the custom cert (`.pem`) file from your IT department
-2. Move/copy the .pem file to the mouseless data dir, e.g.: `$ cp  cert.pem ~/Library/Containers/net.sonuscape.mouseless/Data/`
-3. Open mouseless via the command line like so: `$ REQUESTS_CA_BUNDLE=~/Library/Containers/net.sonuscape.mouseless/Data/cert.pem open Mouseless.app`
+2. Move/copy the .pem file to the Mouseless data dir, e.g.: `$ cp  cert.pem ~/Library/Containers/net.sonuscape.mouseless/Data/`
+3. Open Mouseless via the command line like so: `$ REQUESTS_CA_BUNDLE=~/Library/Containers/net.sonuscape.mouseless/Data/cert.pem open Mouseless.app`
 
 ### BetterTouchTool conflicts
 
@@ -246,9 +255,9 @@ If you're having issues with BTT hotkeys erroneously triggering the Mouseless ov
 
 ### Karabiner and other HID input-modifying apps
 
-Apps that can prevent keypresses from being dispatched to the rest of the system (as Karabiner sometimes does when one of its keybindings is triggered) may cause mouseless keybindings to trigger when not expected.
+Apps that can prevent keypresses from being dispatched to the rest of the system (as Karabiner sometimes does when one of its keybindings is triggered) may cause Mouseless keybindings to trigger when not expected.
 
-For example, if `alt+F` is assigned an action in Karabiner, and `Alt tap` is assigned to `show_overlay` in mouseless, karabiner might allow the `alt` press and release through to the rest of the system, but block the `F` press/release.  If it's all pressed quickly enough, mouseless might register this as `Alt tap` and display the overlay, as it has no visibility of the `F` key events.
+For example, if `alt+F` is assigned an action in Karabiner, and `Alt tap` is assigned to `show_overlay` in Mouseless, karabiner might allow the `alt` press and release through to the rest of the system, but block the `F` press/release.  If it's all pressed quickly enough, Mouseless might register this as `Alt tap` and display the overlay, as it has no visibility of the `F` key events.
 
 So if you experience such issues, lowering the `tap_threshold` setting might help prevent most false triggers, otherwise you might need to adjust keybindings in one app or the other.
 
