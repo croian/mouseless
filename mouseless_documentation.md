@@ -19,6 +19,7 @@
   - [Style / Appearance options](#style--appearance-options)
 - [Keybindings](#keybindings)
   - [Key names](#key-names)
+  - [Assigning multiple keybindings to a command](#assigning-multiple-keybindings-to-a-command)
   - [Tap vs keydown](#tap-vs-keydown)
   - [Using modifiers as...modifiers](#using-modifiers-asmodifiers)
 - [Troubleshooting / System interactions](#troubleshooting--system-interactions)
@@ -197,6 +198,10 @@ The key names used/accepted mostly follow [web conventions](https://developer.mo
   - `NumLock`, `CapsLock`
   - `ContextMenu`, `VolumeUp/Down/Mute`
   - `Lang1`, `Lang2`, `IntlYen` (`¥`), `IntlRo` (`ろ`), `IntlBackslash`
+
+### Assigning multiple keybindings to a command
+
+To assign multiple keybindings to a single command, separate them with `, ` (note the space).  E.g. `Escape, CommandLeft tap`.
 
 ### Tap vs keydown
 
