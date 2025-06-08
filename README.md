@@ -2,6 +2,10 @@
 
 Bug tracking and feature requests for <https://mouseless.click>, as well as [release notes](https://github.com/croian/mouseless/releases).
 
+## NOTE from @croian: regular activity will resume sometime between June 11th and June 14th
+
+Sorry for the lack of responsiveness lately -- I've simply needed to focus my attention toward finishing the Linux and Intel Mac versions. I will respond to the new issues and commments very soon!
+
 ## Reporting bugs / Requesting features
 
 1. Check if your issue already exists in the [Issues](https://github.com/croian/mouseless/issues) tab (the search bar is above the issues list) 
